@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid{
+  display: grid, subgrid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  grid-template-areas:
+  "display_bar"
+  "buttons_grid";
+}
+
+.display_bar{
+  grid-area: display_bar;
+  background-color: lightgrey;
+  grid-column-end: 100%;
+  height: 100px;
+}
+
+.display_bar p{
+  font-size: 50px;
+}
+
+.buttons_grid{
+  display: grid, subgrid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-areas:
+  "btn-one-ele btn-zero-ele btn-dblzero-ele"
+  "btn-sum-ele btn-rect-ele btn-mult-ele"
+  "btn-dev-ele btn-mod-ele btn-rightshift-ele"
+  "btn-leftshift-ele btn-not-ele btn-c-ele"
+  "btn-and-ele btn-or-ele btn-ret-ele";
+}
+
+.btn-one-ele{
+  grid-area: btn-one-ele;
+}
+
+.btn-zero-ele{
+  grid-area: btn-zero-ele;
+}
+
+.btn-dblzero-ele{
+  grid-area: btn-dblzero-ele;
+}
+
+.btn-sum-ele{
+  grid-area: btn-sum-ele;
+}
+
+.btn-rect-ele{
+  grid-area: btn-rect-ele;
+}
+
+.btn-mult-ele{
+  grid-area: btn-mult-ele;
+}
+
+.btn-dev-ele{
+  grid-area: btn-dev-ele;
+}
+
+.btn-mod-ele{
+  grid-area: btn-mod-ele;
+}
+
+.btn-rightshift-ele{
+  grid-area: btn-rightshift-ele;
+}
+
+.btn-leftshift-ele{
+  grid-area: btn-leftshift-ele;
+}
+
+.btn-and-ele{
+  grid-area: btn-and-ele;
+}
+
+.btn-or-ele{
+  grid-area: btn-or-ele;
+}
+
+.btn-not-ele{
+  grid-area: btn-not-ele;
+}
+
+.btn-ret-ele{
+  grid-area: btn-ret-ele;
+}
+
+.btn-c-ele{
+  grid-area: btn-c-ele;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 736px) {
+  .grid{
+    display: grid, subgrid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "display_bar"
+    "buttons_grid";
+  }
+}
