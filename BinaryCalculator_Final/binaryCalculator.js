@@ -119,14 +119,14 @@ buttonAndHandler : function(){
   textRow.value = "";
   Calc.Model.and = true;
   Calc.nextPlayer();
-  document.getElementById("button_and").style.backgroundColor = "red";
+  button_and.style.color = "red";
 },
 
 buttonOrHandler : function(){
   textRow.value = "";
   Calc.Model.or = true;
   Calc.nextPlayer();
-  document.getElementById("button_or").style.backgroundColor = "red";
+  button_or.style.color = "red";
 },
 
 buttonNotHandler : function(){
@@ -211,7 +211,7 @@ buttonplusHandler : function() {
   textRow.value = "";
   Calc.Model.add = true;
   Calc.nextPlayer();
-  document.getElementById("button_plus").style.backgroundColor = "red";
+  button_plus.style.color = "red";
 
 
 },
@@ -221,8 +221,7 @@ buttonsubHandler : function() {
   textRow.value = "";
   Calc.Model.sub = true;
   Calc.nextPlayer();
-  document.getElementById("button_sub").style.backgroundColor = "red";
-
+  button_sub.style.color = "red";
 
 },
 
@@ -231,8 +230,7 @@ buttonmultHandler : function() {
   textRow.value = "";
   Calc.Model.mult = true;
   Calc.nextPlayer();
-  document.getElementById("button_mult").style.backgroundColor = "red";
-
+  button_mult.style.color = "red";
 
 },
 
@@ -241,8 +239,7 @@ buttondevHandler : function() {
   textRow.value = "";
   Calc.Model.dev = true;
   Calc.nextPlayer();
-  document.getElementById("button_dev").style.backgroundColor = "red";
-
+  button_dev.style.color = "red";
 
 },
 
@@ -250,7 +247,7 @@ buttonModHandler : function(){
   textRow.value = "";
   Calc.Model.mod = true;
   Calc.nextPlayer();
-  document.getElementById("button_mod").style.backgroundColor = "red";
+  button_mod.style.color = "red";
 },
 
 buttonreturnHandler : function() {
@@ -397,17 +394,14 @@ resetColors: function(){
   Calc.Model.and = false;
   Calc.Model.or = false;
   Calc.Model.mod = false;
-  document.getElementById("button_plus").style.backgroundColor = "white";
-  document.getElementById("button_sub").style.backgroundColor = "white";
-  document.getElementById("button_mult").style.backgroundColor = "white";
-  document.getElementById("button_dev").style.backgroundColor = "white";
-  document.getElementById("button_mod").style.backgroundColor = "white";
-  document.getElementById("button_and").style.backgroundColor = "white";
-  document.getElementById("button_or").style.backgroundColor = "white";
-  document.getElementById("button_not").style.backgroundColor = "white";
-
-
-
+  button_plus.style.color = "black";
+  button_sub.style.color = "black";
+  button_mult.style.color = "black";
+  button_dev.style.color = "black";
+  button_mod.style.color = "black";
+  button_and.style.color = "black";
+  button_or.style.color = "black";
+  button_or.style.color = "black";
 },
 
 dec2bin: function(dec){

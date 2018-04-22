@@ -347,7 +347,7 @@ buttonplusHandler : function() {
   textRow.value = "";
   Calc.Model.add = true;
   Calc.nextPlayer();
-  document.getElementById("button_plus").style.backgroundColor = "red";
+  button_plus.style.color = "red";
 
 
 },
@@ -357,7 +357,7 @@ buttonsubHandler : function() {
   textRow.value = "";
   Calc.Model.sub = true;
   Calc.nextPlayer();
-  document.getElementById("button_sub").style.backgroundColor = "red";
+  button_sub.style.color = "red";
 
 
 },
@@ -367,7 +367,7 @@ buttonmultHandler : function() {
   textRow.value = "";
   Calc.Model.mult = true;
   Calc.nextPlayer();
-  document.getElementById("button_mult").style.backgroundColor = "red";
+  button_mult.style.color = "red";
 
 
 },
@@ -377,7 +377,7 @@ buttondevHandler : function() {
   textRow.value = "";
   Calc.Model.dev = true;
   Calc.nextPlayer();
-  document.getElementById("button_dev").style.backgroundColor = "red";
+  button_dev.style.color = "red";
 
 
 },
@@ -427,10 +427,10 @@ resetColors: function(){
   Calc.Model.sub = false;
   Calc.Model.mult = false;
   Calc.Model.dev = false;
-  document.getElementById("button_plus").style.backgroundColor = "white";
-  document.getElementById("button_sub").style.backgroundColor = "white";
-  document.getElementById("button_mult").style.backgroundColor = "white";
-  document.getElementById("button_dev").style.backgroundColor = "white";
+  button_plus.style.color = "black";
+  button_sub.style.color = "black";
+  button_mult.style.color = "black";
+  button_dev.style.color = "black";
 
 }
 
